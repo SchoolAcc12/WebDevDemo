@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_mysqldb import MySQL
 from flask_cors import CORS
+from flask import jsonify
 
 # App initialasing
 app = Flask(__name__)
@@ -25,7 +26,7 @@ def index():
     cursor = mysql.connection.cursor();
     cursor.execute('''SELECT user_id,first_name, last_name FROM users''')
     data = cursor.fetchall()
-    return f'{data}'
+    return jsonify(data)
 
 if __name__ == '__main__':
     app.run(debug=True)
