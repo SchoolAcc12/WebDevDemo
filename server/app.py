@@ -7,6 +7,8 @@ from flask import request
 # we use it hash the given user password
 import hashlib
 
+# https://pythonprogramming.net/password-hashing-flask-tutorial/
+
 # App initialasing
 app = Flask(__name__)
 CORS(app)
