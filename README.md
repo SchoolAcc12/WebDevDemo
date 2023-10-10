@@ -6,7 +6,7 @@ This project aims to set a solid foundation for my upcoming web development assi
 The objective of the assignment will be to build a full-stack website with a couple of technologies.
 <hr>
 We will have to build both client and server side logic as well as an API
-and also design a solid relational database design.
+and also create a solid relational database design.
 <br>
 The technologies involved are the following:
 <br>
