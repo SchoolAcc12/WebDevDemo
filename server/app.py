@@ -2,6 +2,10 @@ from flask import Flask
 from flask_mysqldb import MySQL
 from flask_cors import CORS
 from flask import jsonify
+from flask import request
+
+# we use it hash the given user password
+import hashlib
 
 # App initialasing
 app = Flask(__name__)
@@ -27,6 +31,22 @@ def index():
     cursor.execute('''SELECT user_id,first_name, last_name FROM users''')
     data = cursor.fetchall()
     return jsonify(data)
+
+
+'''
+Take request and execute MySQL query
+for the password perfrom encrypting
+'''
+
+@app.route("/register", methods=["POST"])
+def signup():
+    username = request.json['username']
+    password = request.json['password']
+
+    return jsonify({
+        "username":username,
+        "password":password
+    })
 
 if __name__ == '__main__':
     app.run(debug=True)
