@@ -28,15 +28,16 @@ function MainPage(){
         <div className='main-page'>
 
             <div className='left-section'>
-                <h1 id="title">Build a trip you trust</h1>
-                <p id="titlep">World Hotel saves you time and money on expenses,
+                <strong><h1 id="title">Build a trip you trust</h1></strong>
+                <strong><p id="titlep">World Hotel saves you time and money on expenses,
                     invoices and makes booking a trip as easy as clicking
                     a few buttons.
                 </p>
+                </strong>
                 
                 <div className='get-started'>
                     <input id="emailinput"
-                    placeholder='Your e-mail'></input>
+                    placeholder=' Your e-mail' type='email'></input>
 
                     <button id="get-started-but">Get Started</button>
                 </div>
