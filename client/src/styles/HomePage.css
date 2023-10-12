@@ -16,6 +16,7 @@
 
 #logo{
     font-size: 24px;
+    cursor: pointer;
 }
 
 .links{
@@ -23,6 +24,7 @@
     flex-direction: row;
     color: white;
     gap: 20px;
+    cursor: pointer;
 }
 
 .signupbut{
@@ -37,4 +39,55 @@
     height: 50px;
     border-radius: 15px 15px 15px 15px;
     font-size: 14px;
+    cursor: pointer;
+}
+
+.main-page{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+#title{
+    word-spacing: 3px;
+    font-size: 50px;
+}
+
+#titlep{
+    width: 50%;
+    font-size: 20px;
+}
+
+#emailinput{
+    width: 250px;
+    height: 30px;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px rgb(189, 187, 187) solid;
+}
+
+#get-started-but{
+    background-color: #936EFE;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 35px;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.get-started{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
