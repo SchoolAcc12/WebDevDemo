@@ -42,12 +42,20 @@ function MainPage(){
                 </div>
 
                 <div className='destinations-info'>
-                    
+                    <div className='destinations'>
+                        <h3>100+</h3>
+                        <h4 className='under-text'>Destinations</h4>
+                    </div>
+
+                    <div className='hotels'>
+                        <h3>500+</h3>
+                        <h4 className='under-text'>Hotels</h4>
+                    </div>
                 </div>
             </div>
 
             <div className='right-section'>
-                <img src={hotelImg} width="800px" height="700px"></img>
+                <img src={hotelImg} id='home-page-img'></img>
             </div>
 
         </div>
