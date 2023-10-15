@@ -1,5 +1,5 @@
 import './styles/App.css'
-import Register from './Register'
+import Singup from './Signup'
 import HomePage from './HomePage'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path="/">
         <Route index element={<HomePage />} />
-        <Route path="register" element={<Register />} />
+        <Route path="register" element={<Singup />} />
       </Route>
     </Routes>
   </BrowserRouter>
