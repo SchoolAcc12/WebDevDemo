@@ -132,26 +132,19 @@
     align-items: center;
    }
 
-   .right-section{
+   #titlep{
+    width: 85%;
+    font-size:larger;
+   }
+
+   .get-started{
     display: flex;
     flex-direction: column;
     align-items: center;
    }
 
-   #titlep{
-    width: 90%;
-    text-align: center;
-   }
-
-   .destinations-info{
-    display: flex;
-    flex-direction: row;
-    }
-
-    .get-started{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #home-page-img{
+        display: none;
     }
 
 }
