@@ -62,3 +62,27 @@
     align-items: center;
     gap:5px;
 }
+
+.terms-and-conditions{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#sign-up-but{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-text{
+    display: flex;
+    flex-direction: row;
+}
+
+#login-here{
+    text-decoration: underline;
+    cursor: pointer;
+}

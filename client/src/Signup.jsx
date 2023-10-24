@@ -20,6 +20,20 @@ export default function Singup(){
                     <input placeholder='Confirm password' className='inputs'></input>
                 </div>
 
+                <div className='terms-and-conditions'>
+                    <input type='checkbox'></input>
+                    <p>I accept the Terms of use & Privacy policy</p>
+                </div>
+
+                <div className='sign-up-but-wrap'>
+                    <button id="sign-up-but">Sign Up</button>
+                </div>
+
+                <div className='add-text'>
+                    <p>Already have an account?</p>
+                    <p id="login-here">Login here</p>
+                </div>
+
             </div>
         </div>
     );
