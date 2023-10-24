@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './styles/Singup.css'
 
 export default function Singup(){
@@ -6,6 +7,10 @@ export default function Singup(){
         "username":"John",
         "password":"123"
     }
+
+    // state to store fist name of user in memory
+    // this will later be saved in our database
+    const [fisrtName, setFirstName] = useState("");
 
     function sendRequestToSignUp(data){
 
