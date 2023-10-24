@@ -1,6 +1,40 @@
 import './styles/Singup.css'
 
 export default function Singup(){
+
+    let data = {
+        "username":"John",
+        "password":"123"
+    }
+
+    function sendRequestToSignUp(data){
+
+        const URL = "http://localhost:5000/register";
+
+        fetch(URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if(response.ok){
+                return response.json();
+            }
+            else{
+                throw new Error('Request failed');
+            }
+        })
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error(error);
+        })
+    }
+
+
     return(
         <div className="signup-container">
             <h1>Sign up for easy trip booking...</h1>
@@ -26,7 +60,8 @@ export default function Singup(){
                 </div>
 
                 <div className='sign-up-but-wrap'>
-                    <button id="sign-up-but">Sign Up</button>
+                    <button id="sign-up-but"
+                    onClick={() => sendRequestToSignUp(data)}>Sign Up</button>
                 </div>
 
                 <div className='add-text'>
