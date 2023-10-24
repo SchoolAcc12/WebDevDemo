@@ -11,33 +11,54 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
+    width: 400px;
     height: 500px;
     border-radius: 10px 10px 10px 10px;
     background-color: #936EFE;
     color: white;
+    gap: 20px;
 }
 
 .inputs{
-    width: 250px;
-    height: 30px;
-    border-radius: 15px 15px 15px 15px;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
     border: 1px rgb(189, 187, 187) solid;
     font-size: 16px;
 }
 
+.names-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 #firstname{
-    width: 150px;
-    height: 30px;
+    width: 170px;
+    height: 40px;
     border-radius: 15px 15px 15px 15px;
     border: 1px rgb(189, 187, 187) solid;
     font-size: 16px;
 }
 
 #lastname{
-    width: 150px;
-    height: 30px;
+    width: 170px;
+    height: 40px;
     border-radius: 15px 15px 15px 15px;
     border: 1px rgb(189, 187, 187) solid;
     font-size: 16px;
+}
+
+.email-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
 }
